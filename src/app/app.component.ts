@@ -1,9 +1,10 @@
 //importar los componentes
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import {FooterComponent} from './footer/footer.component';
+import { DarkModeService } from './services/dark-mode.service';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -13,4 +14,5 @@ import {FooterComponent} from './footer/footer.component';
 })
 export class AppComponent {
   title = 'angular-3-app';
+  darkModeService: DarkModeService = inject(DarkModeService);
 }
