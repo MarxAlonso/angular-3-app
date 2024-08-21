@@ -1,5 +1,25 @@
-.active{
-    border-bottom: 2px solid #7c3aed;
-    transform: scale(1.1);
-    transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease;
+.active {
+  border-bottom: 2px solid #7c3aed;
+  transform: scale(1.1);
+  transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+/* Enlaces del menú sin fondo gris */
+nav a {
+  background-color: transparent !important;
+}
+
+/* Opcional: puedes cambiar el color de fondo al hacer hover */
+nav a:hover {
+  background-color: transparent;
+}
+
+/* Configuración para el menú móvil */
+nav {
+  backdrop-filter: blur(
+    10px
+  ); /* Este filtro hace que el fondo sea translúcido */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }
