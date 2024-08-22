@@ -13,7 +13,7 @@ import {LaravelComponent} from './Framework/laravel/laravel.component';
 export const routes: Routes = [
     //Aca se cambia el titulo de la pagina dependiendo del apartado de la pagina que nos estamos dirigiendo
     {'path': 'home', 'title': 'Inicio', component:HomeComponent},
-    {'path': 'about', 'title': 'Sobre Nosotros', component:AboutComponent},
+    {'path': 'Nosotros', 'title': 'Sobre Nosotros', component:AboutComponent},
     {'path': 'about', children:[
         {'path': 'company', 'title': 'Sobre Nosotros | Company', component: CompanyComponent},
         {'path': 'employees', 'title': 'Sobre Nosotros | Employees', component: EmployeesComponent}
