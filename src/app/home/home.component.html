@@ -12,17 +12,19 @@
     <div class="flex flex-wrap -m-4">
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <a routerLink="/Framework/astro">
-          <div class="bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700">
+          <div class="h-full flex flex-col justify-between bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700 shadow-lg transition-shadow duration-300">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/images/astro.png" alt="content">
-            <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">FRAMEWORK</h3>
-            <h2 class="text-lg text-black dark:text-white font-medium title-font mb-4">Astro</h2>
-            <p class="leading-relaxed text-base">Astro es un moderno framework de desarrollo web que permite crear sitios rápidos y eficientes. Utiliza un enfoque de "islas de JavaScript" para optimizar el rendimiento, cargando solo el JavaScript necesario en cada página.</p>
+            <div class="flex-grow">
+              <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">FRAMEWORK</h3>
+              <h2 class="text-lg text-black dark:text-white font-medium title-font mb-4">Astro</h2>
+              <p class="leading-relaxed text-base">Astro es un moderno framework de desarrollo web que permite crear sitios rápidos y eficientes. Utiliza un enfoque de "islas de JavaScript" para optimizar el rendimiento, cargando solo el JavaScript necesario en cada página.</p>
+            </div>
           </div>
         </a>
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <a routerLink="/Framework/angular">
-          <div class="bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700">
+          <div class="h-full flex flex-col justify-between bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700 shadow-lg transition-shadow duration-300">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/images/angular.png" alt="content">
             <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">FRAMEWORK</h3>
             <h2 class="text-lg text-black dark:text-white font-medium title-font mb-4">Angular 17</h2>
@@ -32,7 +34,7 @@
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <a routerLink="/Framework/react">
-          <div class="bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700">
+          <div class="h-full flex flex-col justify-between bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700 shadow-lg transition-shadow duration-300">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/images/react.png" alt="content">
             <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">FRAMEWORK</h3>
             <h2 class="text-lg text-black dark:text-white font-medium title-font mb-4">React</h2>
@@ -42,7 +44,7 @@
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <a routerLink="/Framework/laravel">
-          <div class="bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700">
+          <div class="h-full flex flex-col justify-between bg-gray-300 dark:bg-gray-800 bg-opacity-40 p-6 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-700 shadow-lg transition-shadow duration-300">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/images/laravel.png" alt="content">
             <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">FRAMEWORK</h3>
             <h2 class="text-lg text-black dark:text-white font-medium title-font mb-4">Laravel 11</h2>
@@ -51,6 +53,6 @@
         </a>
       </div>
     </div>
+      <button routerLink="/contact" class="mt-10 flex mx-auto text-white bg-indigo-500 border-0 py-1 px-5 focus:outline-none hover:bg-indigo-600 rounded text-lg">Contacto</button>
   </div>
-  <button routerLink="/contact" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Contacto</button>
 </section>

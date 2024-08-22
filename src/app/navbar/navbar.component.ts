@@ -1,24 +1,17 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { DarkModeService } from '../services/dark-mode.service';
-import { NgClass } from '@angular/common';  // Import NgClass
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgClass],  // Add NgClass here
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
   darkModeService: DarkModeService = inject(DarkModeService);
-  isMobileMenuOpen: boolean = false;
-
-  toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }
-
-  toggleDarkMode() {
+  toggleDarkMode(){
     this.darkModeService.updateDarkMode();
   }
 }
